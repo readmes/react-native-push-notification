@@ -1,8 +1,8 @@
-# React Native Push Notifications [![npm version](https://badge.fury.io/js/react-native-push-notification.svg)](http://badge.fury.io/js/react-native-push-notification)
+# React Native Push Notifications [![npm version](https://badge.fury.io/js/react-native-push-notification.svg)](http://badge.fury.io/js/react-native-push-notification) ![what-why](https://cs.adelaide.edu.au/~christoph/badges/content-what-why-brightgreen.svg) ![how](https://cs.adelaide.edu.au/~christoph/badges/content-how-green.svg)
 
 React Native Local and Remote Notifications for iOS and Android
 
-## Installation
+## Installation ![how](https://cs.adelaide.edu.au/~christoph/badges/content-how-green.svg)
 `npm install react-native-push-notification`
 
 ## iOS Installation
@@ -10,7 +10,7 @@ The component uses PushNotificationIOS for the iOS part.
 
 [Please see: PushNotificationIOS](https://facebook.github.io/react-native/docs/pushnotificationios.html#content)
 
-## Android Installation
+## Android Installation ![how](https://cs.adelaide.edu.au/~christoph/badges/content-how-green.svg)
 In your `AndroidManifest.xml`
 ```xml
     .....
@@ -120,7 +120,7 @@ public class MainActivity extends Activity implements DefaultHardwareBackBtnHand
 }
 ```
 
-## Usage
+## Usage ![how](https://cs.adelaide.edu.au/~christoph/badges/content-how-green.svg)
 ```javascript
 var PushNotification = require('react-native-push-notification');
 
@@ -159,7 +159,7 @@ PushNotification.configure({
 });
 ```
 
-## Handling Notifications
+## Handling Notifications ![how](https://cs.adelaide.edu.au/~christoph/badges/content-how-green.svg)
 When any notification is opened or received the callback `onNotification` is called passing an object with the notification data.
 
 Notification object example:
@@ -171,7 +171,7 @@ Notification object example:
 }
 ```
 
-## Local and Schedule Notifications
+## Local and Schedule Notifications ![how](https://cs.adelaide.edu.au/~christoph/badges/content-how-green.svg)
 `PushNotification.localNotification(details: Object)`
 
 `PushNotification.localNotificationSchedule(details: Object)` (IOS ONLY)
@@ -197,10 +197,10 @@ PushNotification.localNotificationSchedule({
 });
 ```
 
-## Sending Notification Data From Server
+## Sending Notification Data From Server ![how](https://cs.adelaide.edu.au/~christoph/badges/content-how-green.svg)
 Same parameters as `PushNotification.localNotification()`
 
-## iOS Only Methods
+## iOS Only Methods ![how](https://cs.adelaide.edu.au/~christoph/badges/content-how-green.svg)
 `PushNotification.checkPermissions(callback: Function)` Check permissions
 
 `PushNotification.setApplicationIconBadgeNumber(number: number)` set badge number
@@ -209,5 +209,5 @@ Same parameters as `PushNotification.localNotification()`
 
 `PushNotification.abandonPermissions()` Abandon permissions
 
-### TODO
+### TODO ![when](https://cs.adelaide.edu.au/~christoph/badges/content-when-yellowgreen.svg)
 - [ ] Add `PushNotification.localNotificationSchedule()` Android support
